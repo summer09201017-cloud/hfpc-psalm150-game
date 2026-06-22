@@ -20,6 +20,7 @@ const SONGS = [
   { name: '鼓瑟彈琴', prog: [C, F, Am, G], wave: 'triangle', arpN: 3, melOct: 19 }, // 中密度、琴瑟
   { name: '高聲歡呼', prog: [F, G, C, C],  wave: 'square',   arpN: 2, melOct: 24 }, // 方波、歡呼
   { name: '萬民同頌', prog: [C, G, Am, F], wave: 'sawtooth', arpN: 2, melOct: 24 }, // 宏亮、眾民
+  { name: '全地歡呼', prog: [G, Em, C, D], wave: 'square',   arpN: 4, melOct: 24 }, // 方波快琶音、全地歡呼
 ]
 export const TRACK_NAMES = SONGS.map((s) => s.name)
 
