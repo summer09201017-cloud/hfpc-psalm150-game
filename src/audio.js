@@ -8,7 +8,7 @@ const mtof = (m) => A4 * Math.pow(2, (m - 69) / 12)
 // 5 首「真的不一樣」的歌:各自不同的和弦進行 + 音色(波形)+ 琶音密度 + 旋律八度,模擬不同樂器。
 // 選哪首就「整首」播那首(不輪替)。情緒:凡有氣息齊聲歡慶讚美(全大調、明亮)。
 const C = { root: 60, triad: [0, 4, 7] }, G = { root: 55, triad: [0, 4, 7] }, F = { root: 53, triad: [0, 4, 7] }
-const Am = { root: 57, triad: [0, 3, 7] }, Dm = { root: 50, triad: [0, 3, 7] }, D = { root: 62, triad: [0, 4, 7] }
+const Am = { root: 57, triad: [0, 3, 7] }, Dm = { root: 50, triad: [0, 3, 7] }, D = { root: 62, triad: [0, 4, 7] }, Em = { root: 52, triad: [0, 3, 7] }
 const END = C
 const SONGS = [
   { name: '齊聲歡慶', prog: [C, F, G, C],  wave: 'triangle', arpN: 2, melOct: 24 }, // 明亮齊唱
@@ -16,6 +16,10 @@ const SONGS = [
   { name: '彈琴擊鼓', prog: [C, Am, F, G], wave: 'triangle', arpN: 4, melOct: 19 }, // 快琶音=彈琴擊鼓
   { name: '絲弦簫聲', prog: [F, C, Dm, G], wave: 'sine',     arpN: 2, melOct: 24 }, // 正弦=簫笛、柔
   { name: '大響的鈸', prog: [C, G, F, G],  wave: 'sawtooth', arpN: 3, melOct: 24 }, // 鋸齒=大響的鈸、響亮
+  { name: '跳舞讚美', prog: [G, D, C, G],  wave: 'triangle', arpN: 4, melOct: 24 }, // 快、舞動
+  { name: '鼓瑟彈琴', prog: [C, F, Am, G], wave: 'triangle', arpN: 3, melOct: 19 }, // 中密度、琴瑟
+  { name: '高聲歡呼', prog: [F, G, C, C],  wave: 'square',   arpN: 2, melOct: 24 }, // 方波、歡呼
+  { name: '萬民同頌', prog: [C, G, Am, F], wave: 'sawtooth', arpN: 2, melOct: 24 }, // 宏亮、眾民
 ]
 export const TRACK_NAMES = SONGS.map((s) => s.name)
 

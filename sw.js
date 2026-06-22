@@ -1,5 +1,5 @@
 // sw.js — 離線快取（app shell）。改版時把 CACHE 版本號 +1。
-const CACHE = 'psalm150-v5'
+const CACHE = 'psalm150-v6'
 const ASSETS = [
   './',
   './index.html',
